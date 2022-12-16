@@ -48,6 +48,10 @@ a {
   font-family: carrinady;
 }
 
+button {
+  color: black;
+}
+
 /*
   author: 30secondsofcode
   source: https://www.30secondsofcode.org/css/s/hover-underline-animation 
@@ -759,7 +763,7 @@ footer,
     ". . .";
   width: 50%;
   justify-content: center;
-  margin: auto;
+  margin: 0 auto 5rem auto;
 }
 
 .shop_content {
@@ -1040,7 +1044,7 @@ input[type="checkbox"] {
     ". ."; 
   width: 50vw; 
   justify-content: center;
-  margin: 2% auto;
+  margin: 2% auto 5rem auto;
 }
 
 .collection_container img {

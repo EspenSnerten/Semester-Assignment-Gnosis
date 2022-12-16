@@ -264,7 +264,7 @@
   .contact_content {
     display: flex;
     flex-direction: column;
-    margin: 0 0 5% 0;
+    margin: 0 0 5rem 0;
   }
 
   .contact_container {
@@ -351,6 +351,10 @@
     border-radius: 3px;
   }
 
+  .about_box {
+    padding-bottom: 5rem;
+  }
+
   /* shop */
 
   .shop_container {
@@ -414,7 +418,7 @@
   }
 
   .event_box {
-    margin: auto;
+    margin: 0 auto 5rem auto;
     width: 80vw;
     justify-content: center;
   }
@@ -682,7 +686,7 @@
     display: flex;
     flex-direction: column-reverse;
     width: 100%;
-    margin-bottom: 4%;
+    margin-bottom: 5rem;
   }
 
   .event_box {
@@ -779,7 +783,6 @@
       ".";
     width: 90vw;
     justify-content: center;
-    margin: 2% auto;
   }
 
   .collection_container img {
