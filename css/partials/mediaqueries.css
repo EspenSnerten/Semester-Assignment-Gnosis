@@ -1,0 +1,894 @@
+
+@media screen and (max-width: 1550px) {
+  .contact_row input {
+    padding: 5% 1rem 5% 1rem;
+    background-color: rgba(9, 9, 9, 1);
+    border-radius: 2px;
+    border: solid whitesmoke 1px;
+    outline: none;
+    color: whitesmoke;
+    font-size: 1.2rem;
+    width: 18vw;
+  }
+
+  .contact_row label,
+  .contact_container label {
+    font-size: 1rem;
+    font-size: clamp(1rem, 0.96rem + 0.39999999999999996vw, 1.5rem);
+    margin-bottom: 1%;
+  }
+
+  .left {
+    margin: 2% 5% 5% 5%;
+  }
+
+  .right {
+    margin: 2% 7% 5% 0;
+  }
+
+  .contact_container textarea {
+    height: 10vw;
+    width: 38.6vw;
+    outline: none;
+    border-radius: 2px;
+    border: solid 1px whitesmoke;
+    background-color: rgba(9, 9, 9, 1);
+    color: whitesmoke;
+    font-size: 0.875rem;
+    font-size: clamp(0.675rem, 0.81rem + 0.54499999999999996vw, 1.5rem);
+  }
+
+  .contact_form button {
+    margin: 0 0 0 5%;
+    padding: 1.5% 6% 1.5% 6%;
+    background-color: rgba(9, 9, 9, 1);
+    outline: none;
+    border-radius: 2px;
+    border: solid whitesmoke 1px;
+    color: whitesmoke;
+    font-size: 0.875rem;
+    font-size: clamp(0.675rem, 0.81rem + 0.54499999999999996vw, 1.5rem);
+    cursor: pointer;
+    transition: 240ms ease-in-out;
+  }
+
+  .about_box {
+    background-position: center;
+  }
+
+  /* shop */
+
+  .shop_container {
+    width: 60%;
+  }
+
+  .shop_content,
+  .shop_img {
+    width: 15vw;
+  }
+}
+
+@media screen and (max-width: 1350px) {
+  .header_box {
+    display: none;
+  }
+
+  /*
+  author: Name (@alvarotrigo)
+  source: https://codepen.io/alvarotrigo/pen/MWEJEWG 
+  *Added some code and styling of my own as well*
+  */
+
+  .mobile_menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(11, 11, 11, 1);
+    color: #fff;
+    height: 50px;
+    padding: 1em;
+    position: relative;
+    z-index: 1;
+  }
+
+  .menu {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .menu > li {
+    margin: 0 1rem;
+    overflow: hidden;
+  }
+
+  .menu a {
+    font-size: 35px;
+    line-height: 75%;
+  }
+
+  .menu i {
+    font-size: 25px;
+  }
+
+  .menu-button-container {
+    display: none;
+    height: 100%;
+    width: 30px;
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #menu-toggle {
+    display: none;
+  }
+
+  /* menu button */
+  .menu-button,
+  .menu-button::before,
+  .menu-button::after {
+    display: block;
+    background-color: whitesmoke;
+    position: absolute;
+    margin-right: 2%;
+    height: 4px;
+    width: 30px;
+    transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
+    border-radius: 2px;
+  }
+
+  .menu-button::before {
+    content: "";
+    margin-top: -8px;
+  }
+
+  .menu-button::after {
+    content: "";
+    margin-top: 8px;
+  }
+
+  #menu-toggle:checked + .menu-button-container .menu-button::before {
+    margin-top: 0px;
+    transform: rotate(405deg);
+  }
+
+  #menu-toggle:checked + .menu-button-container .menu-button {
+    background: rgba(255, 255, 255, 0);
+  }
+
+  #menu-toggle:checked + .menu-button-container .menu-button::after {
+    margin-top: 0px;
+    transform: rotate(-405deg);
+  }
+
+  .menu-button-container {
+    display: flex;
+  }
+
+  .menu {
+    position: absolute;
+    top: 0;
+    margin-top: 51px;
+    left: 0;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #menu-toggle ~ .menu li {
+    height: 0;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  }
+
+  #menu-toggle:checked ~ .menu li {
+    border: 1px solid #333;
+    height: 2.7em;
+    padding: 0.5em;
+    transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  }
+
+  .menu > li {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0.5em 0;
+    width: 100%;
+    color: white;
+    background-color: #222;
+  }
+
+  .menu > li:not(:last-child) {
+    border-bottom: 1px solid #444;
+  }
+
+  .search {
+    width: 130px;
+    box-sizing: border-box;
+    border: 1px solid whitesmoke;
+    color: whitesmoke;
+    border-radius: 2px;
+    font-size: 18px;
+    background-color: #222;
+    background-image: url(/media/search.png.svg);
+    background-position: 10px 3px;
+    background-repeat: no-repeat;
+    padding: 13px 20px 15px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+    outline: none;
+  }
+
+  .search:focus {
+    width: 60%;
+  }
+
+  /* footer */
+
+  .contact_info {
+    display: none;
+  }
+
+  .footer_info_box {
+    gap: 1%;
+  }
+
+  .footer_nav_box {
+    width: 200px;
+    margin: 3% auto auto auto;
+  }
+
+  .footer_patron_box {
+    width: 390px;
+    margin: 2% auto auto auto;
+  }
+
+  .patron_container {
+    padding: 1%;
+  }
+
+  .button_box {
+    margin: auto 1% auto 3%;
+  }
+
+  /* contact */
+
+  .contact_content {
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 5% 0;
+  }
+
+  .contact_container {
+    margin: 0 0 3% 5%;
+  }
+
+  .contact_form,
+  .contact_row {
+    width: 100vw;
+  }
+
+  .contact_form h1 {
+    margin: 3% 0 2% 15%;
+  }
+
+  .contact_img {
+    padding: 40%;
+    width: 100vw;
+  }
+
+  .contact_row input {
+    width: 32vw;
+  }
+
+  .textbox label {
+    margin: 0 0 1% 10.5%;
+  }
+
+  .left {
+    margin: 2% 5% 5% 15%;
+  }
+
+  .right {
+    margin: 2% 1% 5% 0;
+  }
+
+  .contact_container textarea {
+    height: 15vw;
+    width: 69.1vw;
+    margin: 0 0 0 10.5%;
+  }
+
+  .contact_form button {
+    margin: 0 0 0 15%;
+  }
+
+  /* collection */
+
+  .collection_box {
+    width: 70vw;
+  }
+
+  .collection_container img {
+    width: 40vw;
+  }
+
+  .collection_title_box {
+    width: 40vw;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .sign_up_box form input {
+    padding: 0.4rem 10% 0.4rem 1rem;
+  }
+  .sign_up_box form {
+    padding: 0 0 0.5rem 5%;
+  }
+
+  .sign_up_box label {
+    padding-left: 5%;
+  }
+
+  /* about */
+
+  .about_content {
+    background-color: rgba(0, 0, 0, 0.705);
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto 0 auto;
+    padding: 2% 0 2% 0;
+    border-radius: 3px;
+  }
+
+  /* shop */
+
+  .shop_container {
+    width: 80%;
+  }
+
+  .shop_content,
+  .shop_img {
+    width: 19vw;
+  }
+
+  /* ticket */
+
+  .title_container h1 {
+    font-family: carrinady;
+    font-size: 1.75rem;
+    font-size: clamp(2.95rem, 1.7500000000000001rem + 4.5vw, 6.25rem);
+  }
+
+  .ticket_body {
+    padding: 9% 0 0 0;
+  }
+
+  .title_box,
+  .event_row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: auto;
+  }
+
+  .title_container {
+    background-color: rgba(48, 48, 48, 1);
+    width: 100vw;
+    margin: 4.5% 0 0 0;
+  }
+
+  .logo_container {
+    display: none;
+  }
+
+  .logo_ticket {
+    width: 15vw;
+    height: auto;
+    margin: auto;
+    justify-content: center;
+  }
+  .title_container h1 {
+    font-family: carrinady;
+    font-size: 1.75rem;
+    font-size: clamp(1.75rem, 0.8500000000000001rem + 4.5vw, 6.25rem);
+    margin: 0;
+    padding: 1% 0;
+    text-align: center;
+  }
+
+  .event_ticket_box {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100%;
+  }
+
+  .event_box {
+    margin: auto;
+    width: 80vw;
+    justify-content: center;
+  }
+
+  .ticket_box {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(43, 43, 43, 1);
+    width: 80vw;
+    margin: 5vw auto 5vw auto;
+    border-radius: 0 0 0 4px;
+    justify-content: center;
+    border-radius: 2px;
+  }
+
+  .event_row {
+    gap: 2.5%;
+
+    margin: 0 auto 2.5% auto;
+  }
+
+  .event_img {
+    display: block;
+    width: 37vw;
+    height: auto;
+    border-radius: 3px;
+    border: solid black 1px;
+    margin: auto;
+  }
+
+  .event_p_box {
+    margin: 11% auto 0 7vw;
+    width: 22%;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.82);
+    text-align: center;
+    justify-content: center;
+    padding: 1.4% 0;
+  }
+
+  .event_p {
+    font-size: 1.125rem;
+    font-size: clamp(1.125rem, 1.0375rem + 0.33750000000000006vw, 1.5625rem);
+    margin: 0;
+  }
+
+  .event_p_small {
+    font-size: 1.125rem;
+    font-size: clamp(0.625rem, 1.0375rem + 0.1750000000000006vw, 1.4625rem);
+    padding: 0 1%;
+  }
+
+  /* collection */
+
+  .collection_box {
+    width: 80vw;
+  }
+
+  .collection_container img {
+    width: 45vw;
+  }
+
+  .collection_title_box {
+    width: 45vw;
+  }
+
+  .collection_container_title {
+    line-height: 50%;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .footer_patron_box {
+    font-size: 14px;
+    width: 25%;
+    margin-top: 3.7%;
+  }
+  .logo_footer {
+    width: 60%;
+  }
+
+  .patron_container p {
+    margin: 0;
+  }
+
+  .patron {
+    margin-bottom: 2%;
+    width: 60%;
+  }
+
+  .button_box {
+    width: 33%;
+  }
+
+  .button_box a {
+    font-size: 14px;
+    margin: auto 0 auto 0;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .shop_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+      ". ."
+      ". ."
+      ". ."
+      ". ."
+      ". ."
+      ". .";
+    width: 90%;
+  }
+
+  .shop_content,
+  .shop_img {
+    width: 40vw;
+  }
+
+  .shop_descrip {
+    font-size: 1rem;
+    font-size: clamp(
+      0.9rem,
+      0.8069767441860466rem + 0.46511627906976744vw,
+      1.125rem
+    );
+  }
+
+  .shop_button {
+    font-size: 0.875rem;
+    font-size: clamp(1.075rem, 0.85rem + 0.325vw, 1.2rem);
+  }
+
+  .footer_patron_box {
+    display: none;
+  }
+
+  .footer_info_box {
+    margin: 0 0 0 10%;
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 725px) {
+  .item_section {
+    width: 90%;
+  }
+
+  .item_box {
+    flex-direction: column;
+    margin: 3% auto;
+  }
+
+  .item_one {
+    margin: 0 auto 21% auto;
+  }
+
+  .item_box_middle {
+    flex-direction: column;
+    margin: 18% auto 15% auto;
+  }
+
+  .item_box_middle img {
+    height: 24vh;
+  }
+
+  .label_box_middle {
+    width: 60%;
+    margin: auto;
+  }
+
+  .label a {
+    font-size: 0.875rem;
+    font-size: clamp(0.975rem, 0.03999999999999993rem + 6.225vw, 5rem);
+  }
+
+  .item p {
+    margin: 0;
+    gap: 0;
+    text-align: center;
+    font-size: 0.875rem;
+    font-size: clamp(0.975rem, 0.03999999999999993rem + 2.825vw, 1.6rem);
+  }
+
+  /* contact */
+
+  .contact_row {
+    flex-direction: column;
+  }
+
+  .contact_form,
+  .contact_row {
+    width: 100vw;
+  }
+
+  .contact_row input {
+    width: 70vw;
+    height: 55px;
+  }
+
+  .left {
+    margin: 2% 5% 5% 15%;
+  }
+
+  .right {
+    margin: 2% 1% 5% 15%;
+  }
+
+  .contact_container textarea {
+    height: 150px;
+  }
+
+  .contact_form button {
+    margin: 0 0 0 15%;
+    padding: 1rem 3rem;
+  }
+
+  /* ticket */
+
+  .title_container h1 {
+    font-family: carrinady;
+    font-size: 1.75rem;
+    font-size: clamp(2.95rem, 1.7500000000000001rem + 4.5vw, 6.25rem);
+  }
+
+  .ticket_body {
+    padding: 9% 0 0 0;
+  }
+
+  .title_box,
+  .event_row {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+  }
+
+  .title_container {
+    background-color: rgba(48, 48, 48, 1);
+    width: 100vw;
+    margin: 4.5% 0 0 0;
+  }
+
+  .logo_container {
+    display: none;
+  }
+
+  .logo_ticket {
+    width: 15vw;
+    height: auto;
+    margin: auto;
+    justify-content: center;
+  }
+  .title_container h1 {
+    font-family: carrinady;
+    font-size: 1.75rem;
+    font-size: clamp(1.75rem, 0.8500000000000001rem + 4.5vw, 6.25rem);
+    margin: 0;
+    padding: 1% 0;
+    text-align: center;
+  }
+
+  .event_ticket_box {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100%;
+    margin-bottom: 4%;
+  }
+
+  .event_box {
+    margin: auto;
+    width: 80vw;
+    justify-content: center;
+  }
+
+  .ticket_box {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(43, 43, 43, 1);
+    width: 90vw;
+    margin: 5vw auto 5vw auto;
+    border-radius: 0 0 0 4px;
+    justify-content: center;
+    border-radius: 2px;
+  }
+
+  .event_img {
+    display: block;
+    width: 80vw;
+    height: auto;
+    border-radius: 3px;
+    border: solid black 1px;
+    margin: 2% auto;
+  }
+
+  .event_p_box {
+    margin: 31% auto 0 20vw;
+    width: 42%;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.82);
+    text-align: center;
+    justify-content: center;
+    padding: 1.4% 0;
+  }
+
+  .event_p {
+    font-size: 1.125rem;
+    font-size: clamp(1.125rem, 1.0375rem + 0.33750000000000006vw, 1.5625rem);
+    margin: 0;
+  }
+
+  .event_p_small {
+    font-size: 1.125rem;
+    font-size: clamp(0.625rem, 1.0375rem + 0.1750000000000006vw, 1.4625rem);
+    padding: 0 1%;
+  }
+
+  /* collection */
+
+  .collection_hero {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(11, 11, 11, 1) 5%,
+        rgba(255, 255, 255, 0) 40%
+      ),
+      linear-gradient(to top, rgba(9, 9, 9, 1) 5%, rgba(255, 255, 255, 0) 40%),
+      url(/media/collection-bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100vw;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 15vw 0;
+  }
+
+  .collection_title {
+    font-size: 2.0625rem;
+    font-size: clamp(1.7625rem, 1.475rem + 2.0375vw, 5rem);
+    font-family: carrinady;
+    background-color: rgba(0, 0, 0, 0.94);
+    margin: 0 auto 5vw auto;
+    padding: 2vw 1vw;
+    width: 100vw;
+    text-align: center;
+    justify-content: center;
+    border-radius: 2px;
+  }
+
+  .collection_box {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 2rem 2rem;
+    grid-template-areas:
+      "."
+      "."
+      "."
+      "."
+      "."
+      ".";
+    width: 90vw;
+    justify-content: center;
+    margin: 2% auto;
+  }
+
+  .collection_container img {
+    width: 90vw;
+  }
+
+  .collection_title_box {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.89);
+    width: 90vw;
+    height: 6.2vw;
+    margin: -6% 0 0 0%;
+    justify-content: center;
+    text-align: center;
+    border-radius: 0 0 2px;
+  }
+
+  .collection_container_title {
+    font-size: 1.25rem;
+    font-size: clamp(1.25rem, 0.75rem + 2.5vw, 1.875rem);
+    font-family: carrinady;
+    margin: 0 auto;
+    padding: 2vw 0;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .hero {
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position-y: center;
+    padding: 20rem 0 10rem 0rem;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+  }
+
+  .hero_box a {
+    font-size: 1.5625rem;
+    font-size: clamp(1.5625rem, 1.075rem + 7.4375vw, 7rem);
+  }
+
+  .hero_box {
+    margin: 0;
+  }
+
+  .sign_up_box form input {
+    padding: 0.4rem 5% 0.4rem 1rem;
+    width: 60%;
+  }
+  .sign_up_box form {
+    padding: 0 0 0.5rem 5%;
+  }
+
+  .sign_up_box label {
+    padding-left: 5%;
+  }
+
+  .sign_up_box form button {
+    width: 120px;
+    font-size: 1.2rem;
+    padding: 0.5rem auto;
+    text-align: center;
+  }
+
+  /* about */
+
+  .about_p {
+    font-size: 1rem;
+    font-size: clamp(
+      1rem,
+      1.2726851851851852rem + 0.6365740740740741vw,
+      1.6875rem
+    );
+    width: 90%;
+    margin: auto;
+    word-spacing: 2px;
+  }
+
+  .title_p {
+    width: 95%;
+    margin: auto;
+    font-size: 1rem;
+    font-size: clamp(
+      1rem,
+      1.2726851851851852rem + 0.6365740740740741vw,
+      1.6875rem
+    );
+  }
+
+  .about_content h1 {
+    font-size: 1.875rem;
+    font-size: clamp(3.575rem, 1.1125rem + 0.3125vw, 5.1875rem);
+    font-family: carrinady;
+  }
+
+  .about_content h2 {
+    font-size: 1.875rem;
+    font-size: clamp(3.475rem, 1.8125rem + 0.3125vw, 6.1875rem);
+    font-family: carrinady;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .footer_some {
+    gap: 0.8rem;
+  }
+
+  .opening_box {
+    width: 14rem;
+  }
+}

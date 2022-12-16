@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Espen Henriksen Snerten" />
+    <meta name="description" content="this is the gnosis ticket page" />
+    <title>Ticket's - Gnosis</title>
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="stylesheet" href="/css/partials/mediaqueries.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.1/font/bootstrap-icons.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" type="image/x-icon" href="/media/logo-icon.png" />
+  </head>
+
+  <body class="index_body">
+    <header class="header">
+      <nav class="header_box">
+        <div class="logo_box">
+          <a href="/index.html">
+            <img
+              src="/media/logo.png.png"
+              alt="This is the logo of the gnosis society"
+              class="logo"
+            />
+          </a>
+        </div>
+
+        <div class="link_box">
+          <a href="shop.html" class="hover_a">Shop</a>
+          <a href="tickets.html" class="hover_a_active">Tickets</a>
+          <a href="collection.html" class="hover_a">Collection</a>
+          <a href="about.html" class="hover_a">About</a>
+          <a href="contact.html" class="hover_a">Contact</a>
+        </div>
+
+        <div class="search_box">
+          <i class="bi bi-cart"></i>
+          <form action="submit">
+            <input
+              type="text"
+              name="search"
+              placeholder="Search.."
+              class="search"
+            />
+          </form>
+        </div>
+      </nav>
+
+      <div class="mobile_menu">
+        <div>
+          <a href="index.html"
+            ><img
+              src="/media/logo.png.png"
+              alt="This is the logo of the gnosis society"
+              class="logo"
+          /></a>
+        </div>
+        <input id="menu-toggle" type="checkbox" />
+        <label class="menu-button-container" for="menu-toggle">
+          <div class="menu-button"></div>
+        </label>
+        <ul class="menu">
+          <li><input type="text" placeholder="Search.." class="search" /></li>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="tickets.html">Tickets</a></li>
+          <li><a href="collection.html">Collection</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li>
+            <a href="cart.html"><i class="bi bi-cart"></i></a>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <main class="ticket_body">
+      <div class="title_box">
+        <div class="title_container">
+          <h1 class="ticket_title">Admission And Upcoming Events</h1>
+        </div>
+        <div class="logo_container">
+          <img
+            src="/media/logo.png.png"
+            alt="this is the Gnosis logo"
+            class="logo_ticket"
+          />
+        </div>
+      </div>
+      <div class="event_ticket_box">
+        <div class="event_box">
+          <div class="event_row">
+            <div class="event_container">
+              <img
+                src="/media/ticket-img1.png"
+                alt="Picture of a robot"
+                class="event_img"
+              />
+              <div class="event_p_box">
+                <p class="event_p">MIT & Robotics week</p>
+                <p class="event_p">October 7-13</p>
+              </div>
+            </div>
+            <div class="event_container">
+              <img
+                src="/media/ticket-img2.png"
+                alt="Picture of a girl with a vr headsett"
+                class="event_img"
+              />
+              <div class="event_p_box">
+                <p class="event_p">VR for KIDZ</p>
+                <p class="event_p">November 2-4</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="event_row">
+            <div class="event_container">
+              <img
+                src="/media/ticket-img3.png"
+                alt="Picture of a robot"
+                class="event_img"
+              />
+              <div class="event_p_box">
+                <p class="event_p">AMD Exposition</p>
+                <p class="event_p">12 November</p>
+              </div>
+            </div>
+            <div class="event_container">
+              <img
+                src="/media/ticket-img4.png"
+                alt="Picture of a girl with a vr headsett"
+                class="event_img"
+              />
+              <div class="event_p_box">
+                <p class="event_p event_p_small">
+                  International Day of Human Space Flight
+                </p>
+                <p class="event_p event_p_small">12 April</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="ticket_box">
+          <div class="ticket_container">
+            <h2>Ticket selection</h2>
+            <form action="">
+              <div class="ticket_row">
+                <input
+                  type="radio"
+                  id="regular"
+                  name="ticket"
+                  value="regular"
+                />
+                <label for="regular">Regular Ticket $ 12.99</label>
+              </div>
+              <div class="ticket_row">
+                <input
+                  type="radio"
+                  id="student"
+                  name="ticket"
+                  value="student"
+                />
+                <label for="student">Student Ticket $ 7.99</label>
+              </div>
+              <div class="ticket_row">
+                <input type="radio" id="child" name="ticket" value="child" />
+                <label for="child">Child Ticket $ 7.99</label>
+              </div>
+              <div class="ticket_row row_bottom">
+                <input type="radio" id="group" name="ticket" value="group" />
+                <label for="group"
+                  >Group Ticket 10 people min - $ 10.00 per head</label
+                >
+              </div>
+            </form>
+            <p class="ticket_info">Children 0 - 3 free admission</p>
+            <p class="ticket_info">
+              Senior citizens and veterans free admission
+            </p>
+            <p class="ticket_info ticket_info_bottom">
+              Saturday after 12:00 free admission
+            </p>
+          </div>
+          <p class="ticket_sum">Total: 0.00</p>
+          <button class="ticket_button">Checkout</button>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="sign_up_box">
+        <label for="sign_up">Sign up to get our newsletter</label>
+        <form action="submit">
+          <input type="text" placeholder="Enter your email" />
+          <button>Sign up</button>
+        </form>
+      </div>
+
+      <div class="footer_info_box">
+        <div class="footer_nav_box">
+          <div class="footer_some">
+            <a href="research.html" class="footer_a">Research publications</a>
+            <a href="www.twitter.com" class="twitter"
+              ><i class="bi bi-twitter"></i
+            ></a>
+            <a href="www.instagram.com" class="insta"
+              ><i class="bi bi-instagram"></i
+            ></a>
+            <a href="www.youtube.com" class="youtube"
+              ><i class="bi bi-youtube"></i
+            ></a>
+            <a href="www.facebook.com" class="face"
+              ><i class="bi bi-facebook"></i
+            ></a>
+          </div>
+
+          <div class="footer_nav">
+            <ul class="footer_links">
+              <a href="jobs.html" class="footer_a">Jobs</a>
+              <a href="archive.html" class="footer_a">Archive</a>
+              <a href="legal.html" class="footer_a">Legal</a>
+            </ul>
+            <div class="opening_info">
+              <div class="opening_box">
+                <li><i class="bi bi-clock"></i> Opening Hours</li>
+                <li>Mon-Sat: 09:00 - 16:00</li>
+                <li>Sunday: 10:00 - 15:00</li>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer_patron_box">
+          <div class="patron_container">
+            <div class="patron">
+              <img
+                src="/media/logo.png.png"
+                alt="this is the logo of the gnosis society"
+                class="logo_footer"
+              />
+              <p>Become a patron of the</p>
+              <p>Gnosis Society</p>
+            </div>
+            <div class="button_box">
+              <a href="tickets.html" class="donate">Donate</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact_info">
+          <a href="contact.html" class="contact">Contact us</a>
+          <p>Tlf: +91 5020 871 451</p>
+          <a href="mailto: help@gnosis.com">Email: help@gnosis.com</a>
+          <p>Adress: 105 Stargaze avn.</p>
+        </div>
+      </div>
+      <div class="copy">
+        <p>&copy; 2022 The Gnosis Society</p>
+      </div>
+    </footer>
+  </body>
+</html>
