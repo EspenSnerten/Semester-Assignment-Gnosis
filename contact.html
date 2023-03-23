@@ -9,6 +9,7 @@
     <title>Contact - Gnosis</title>
     <link rel="stylesheet" href="/css/styles.css" />
     <link rel="stylesheet" href="/css/partials/mediaqueries.css" />
+    <script defer src="/src/js/main.js"></script>
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.1/font/bootstrap-icons.css"
@@ -41,7 +42,7 @@
           <a href="tickets.html" class="hover_a">Tickets</a>
           <a href="collection.html" class="hover_a">Collection</a>
           <a href="about.html" class="hover_a">About</a>
-          <a href="contact.html" class="hover_a">Contact</a>
+          <a href="contact.html" class="hover_a_active">Contact</a>
         </div>
 
         <div class="search_box">
@@ -87,37 +88,116 @@
     <main class="contact_content">
       <div class="contact_img"></div>
 
-      <form action="submit" class="contact_form">
-        <h1>Contact us</h1>
+      <form
+        action="https://formsubmit.co/8f92aac3bfe8d099d8916fdc29d4cb55"
+        method="POST"
+        id="form"
+        class="form"
+      >
+        <h1 class="form_title">Contact us</h2>
+        <!-- Honeypot, i wrote this myself with pointers -->
+        <input type="text" name="_honey" style="display: none" />
+        <!-- Disable Captcha, also this, i will link references in the readme -->
+        <input type="hidden" name="_captcha" value="false" />
+        <!-- <input type="hidden" name="_next" value="https://stirring-kangaroo-3ea8c1.netlify.app/success.html" /> -->
 
-        <div class="contact_row">
-          <div class="contact_container left">
-            <label for="first-name">First Name</label>
-            <input type="text" placeholder="Enter your first name" />
+        <div class="form_row">
+          <div class="form_box">
+            <label for="fname" class="email_label">First Name</label>
+            <input
+              type="text"
+              id="fname"
+              name="First&nbsp;Name"
+              placeholder="Enter your first name"
+              class="fname_container"
+            />
+            <i class="bi bi-check-circle"></i>
+            <i class="bi bi-exclamation-circle"></i>
+            <small>Error message</small>
           </div>
-          <div class="contact_container right">
-            <label for="last-name">Last Name</label>
-            <input type="text" placeholder="Enter your last name" />
+
+          <div class="form_box">
+            <label for="lname" class="lname_label">Last Name</label>
+            <input
+              type="text"
+              id="lname"
+              name="Last&nbsp;Name"
+              placeholder="Enter your last name"
+              class="lname_container"
+            />
+            <i class="bi bi-check-circle"></i>
+            <i class="bi bi-exclamation-circle"></i>
+            <small>Error message</small>
           </div>
         </div>
 
-        <div class="contact_row">
-          <div class="contact_container left">
-            <label for="email">Email</label>
-            <input type="email" placeholder="Enter your email" />
+        <div class="form_row">
+          <div class="form_box">
+            <label for="email" class="email_label">Email</label>
+            <input
+              type="text"
+              id="email"
+              name="Email"
+              placeholder="Enter your email address"
+              class="email_container"
+            />
+            <i class="bi bi-check-circle"></i>
+            <i class="bi bi-exclamation-circle"></i>
+            <small>Error message</small>
           </div>
-          <div class="contact_container right">
-            <label for="phonenumber">Phone number</label>
-            <input type="text" placeholder="Enter your phone number" />
+          <div class="form_box">
+            <label for="phonenumber" class="phonenumber_label"
+              >Phone Number</label
+            >
+            <input
+              type="text"
+              id="phonenumber"
+              name="Phone&nbsp;Number"
+              placeholder="Enter your phonenumber"
+              class="phonenumber_container"
+            />
+            <i class="bi bi-check-circle"></i>
+            <i class="bi bi-exclamation-circle"></i>
+            <small>Error message</small>
           </div>
         </div>
 
-        <div class="contact_container textbox">
-          <label for="textbox">Message</label>
-          <textarea name="textbox" id="textbox"></textarea>
+        <div class="form_row">
+          <div class="form_box">
+            <label for="subject" class="subject_label">Subject</label>
+            <input
+              type="text"
+              name="subject"
+              id="subject"
+              placeholder="Enter the subject of your message"
+            />
+            <i class="bi bi-check-circle"></i>
+            <i class="bi bi-exclamation-circle"></i>
+            <small>Error message</small>
+          </div>
         </div>
-        <button>Send</button>
+
+        <div class="form_row">
+          <div class="form_box">
+            <textarea
+              id="textbox"
+              placeholder="How can we help you?"
+              name="Comments,&nbsp;Questions"
+            ></textarea>
+            <div class="form_validation_row">
+              <i class="bi bi-check-circle"></i>
+              <i class="bi bi-exclamation-circle"></i>
+              <small>Error message</small>
+            </div>
+            <div class="button_container">
+              <button type="submit" id="submit" class="contact_btn">
+                Send
+              </button>
+            </div>
+          </div>
+        </div>
       </form>
+      <a href="contactsuccess.html">Still need to contact us</a>
     </main>
 
     <footer>

@@ -1,57 +1,5 @@
 
 @media screen and (max-width: 1550px) {
-  .contact_row input {
-    padding: 5% 1rem 5% 1rem;
-    background-color: rgba(9, 9, 9, 1);
-    border-radius: 2px;
-    border: solid whitesmoke 1px;
-    outline: none;
-    color: whitesmoke;
-    font-size: 1.2rem;
-    width: 18vw;
-  }
-
-  .contact_row label,
-  .contact_container label {
-    font-size: 1rem;
-    font-size: clamp(1rem, 0.96rem + 0.39999999999999996vw, 1.5rem);
-    margin-bottom: 1%;
-  }
-
-  .left {
-    margin: 2% 5% 5% 5%;
-  }
-
-  .right {
-    margin: 2% 7% 5% 0;
-  }
-
-  .contact_container textarea {
-    height: 10vw;
-    width: 38.6vw;
-    outline: none;
-    border-radius: 2px;
-    border: solid 1px whitesmoke;
-    background-color: rgba(9, 9, 9, 1);
-    color: whitesmoke;
-    font-size: 0.875rem;
-    font-size: clamp(0.675rem, 0.81rem + 0.54499999999999996vw, 1.5rem);
-  }
-
-  .contact_form button {
-    margin: 0 0 0 5%;
-    padding: 1.5% 6% 1.5% 6%;
-    background-color: rgba(9, 9, 9, 1);
-    outline: none;
-    border-radius: 2px;
-    border: solid whitesmoke 1px;
-    color: whitesmoke;
-    font-size: 0.875rem;
-    font-size: clamp(0.675rem, 0.81rem + 0.54499999999999996vw, 1.5rem);
-    cursor: pointer;
-    transition: 240ms ease-in-out;
-  }
-
   .about_box {
     background-position: center;
   }
@@ -267,17 +215,10 @@
     margin: 0 0 5rem 0;
   }
 
-  .contact_container {
-    margin: 0 0 3% 5%;
-  }
-
+  
   .contact_form,
   .contact_row {
     width: 100vw;
-  }
-
-  .contact_form h1 {
-    margin: 3% 0 2% 15%;
   }
 
   .contact_img {
@@ -285,31 +226,9 @@
     width: 100vw;
   }
 
-  .contact_row input {
-    width: 32vw;
-  }
-
-  .textbox label {
-    margin: 0 0 1% 10.5%;
-  }
-
-  .left {
-    margin: 2% 5% 5% 15%;
-  }
-
-  .right {
-    margin: 2% 1% 5% 0;
-  }
-
-  .contact_container textarea {
-    height: 15vw;
-    width: 69.1vw;
-    margin: 0 0 0 10.5%;
-  }
-
-  .contact_form button {
-    margin: 0 0 0 15%;
-  }
+.form {
+  width: 95%;
+}
 
   /* collection */
 
@@ -606,35 +525,8 @@
 
   /* contact */
 
-  .contact_row {
+  .form_row {
     flex-direction: column;
-  }
-
-  .contact_form,
-  .contact_row {
-    width: 100vw;
-  }
-
-  .contact_row input {
-    width: 70vw;
-    height: 55px;
-  }
-
-  .left {
-    margin: 2% 5% 5% 15%;
-  }
-
-  .right {
-    margin: 2% 1% 5% 15%;
-  }
-
-  .contact_container textarea {
-    height: 150px;
-  }
-
-  .contact_form button {
-    margin: 0 0 0 15%;
-    padding: 1rem 3rem;
   }
 
   /* ticket */
@@ -846,6 +738,11 @@
     font-size: 1.2rem;
     padding: 0.5rem auto;
     text-align: center;
+  }
+
+  .form_box ::placeholder {
+    font-size: 1rem;
+font-size: clamp(1rem, 0.85rem + 0.25vw, 1.25rem);
   }
 
   /* about */

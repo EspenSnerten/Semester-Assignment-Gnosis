@@ -1,0 +1,244 @@
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  border: 1px solid rgba(255, 255, 255, 0);
+  -webkit-text-fill-color: rgb(240, 240, 240);
+  -webkit-box-shadow: 0 0 0px 1000px rgba(255, 255, 255, 0) inset;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+.contact_content {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+}
+
+.contact_row {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.contact_container {
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 3% 5%;
+}
+
+
+.contact_img {
+  display: flex;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(11, 11, 11, 1) 5%,
+      rgba(255, 255, 255, 0) 40%
+    ),
+    linear-gradient(to top, rgba(9, 9, 9, 1) 5%, rgba(255, 255, 255, 0) 40%),
+    url(/media/contact.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position-y: center;
+  padding: 25%;
+  width: 50vw;
+}
+
+.form_container {
+  width: 900px;
+  justify-content: center;
+  margin: 8em auto 0 auto;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  padding: 1em 3em;
+  border-radius: 5px;
+  overflow: hidden;
+  width: 50%;
+}
+
+
+.form_title {
+  margin: 3vh 0 10vh 0;
+  font-size: 1.9em;
+}
+
+.form_row {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  gap: 1em;
+  justify-content: center;
+}
+
+.form_box {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  position: relative;
+  margin: 0 0 1em 0;
+}
+
+.form_box input,
+.form_box textarea {
+  border: solid 1px rgba(110, 110, 110, 0.541);
+  border-radius: 4px;
+  background: transparent;
+  outline: none;
+  text-overflow: ellipsis;
+}
+
+.form_box input,
+.form_box textarea,
+.form_box button,
+.form_box label {
+  font-size: 1.1rem;
+  margin-bottom: .2em;
+  color: rgb(240, 240, 240);
+}
+
+.form_box label {
+  margin-bottom: .5em;
+  font-size: 1.4em;
+}
+
+.form_box input,
+.form_box textarea {
+  padding: 1em 2.5em 1em 1em;
+  display: block;
+}
+
+.form_box input {
+  border: none;
+  border-bottom: solid 2px rgba(133, 133, 133, 0.541);
+  border-radius: 0;
+  padding: 1em 1.5em  1em 0;
+}
+
+.form_box ::placeholder {
+  color: rgb(160, 160, 160);
+  font-family: system-ui, 'Segoe UI', Roboto, Cantarell,
+    'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.form_box input:focus {
+  outline: 0;
+  border-bottom: solid 2.5px rgb(180, 180, 180);
+}
+.form_box textarea:focus {
+  outline: 0;
+  border: solid 2.5px rgb(180, 180, 180);
+}
+
+.form_box textarea {
+  height: 130px;
+  resize: none;
+}
+
+.button_container {
+  display: flex;
+  flex-direction: row;
+}
+
+.contact_btn {
+  width: 150px;
+  padding: 0.8em;
+  margin: 1em auto 0 0;
+  cursor: pointer;
+  font-size: 1.2em;
+  transition: all 250ms;
+  border-radius: 5px;
+  border: none;
+  background-color: black;
+  justify-content: flex-start ;
+}
+
+.contact_btn:hover {
+  background-color: black;
+  transform: scale(1.07);
+  transition: all 250ms;
+}
+
+.form_box i {
+  position: absolute;
+  top: 55px;
+  right: 10px;
+  font-size: 1.1em;
+  visibility: hidden;
+}
+
+.form_validation_row i {
+  top: 15px;
+}
+
+.form_box.success input,
+.form_box.success textarea {
+  border: none;
+  border-bottom: solid 1px rgb(12, 170, 60);
+}
+
+.form_box.error input {
+  border-bottom: solid 1px rgb(255, 0, 0);
+}
+.form_box.error textarea {
+  border: solid 1px rgb(255, 0, 0);
+}
+
+.form_box.success i.bi-check-circle {
+  color: rgb(12, 170, 60);
+  visibility: visible;
+}
+
+.form_box.error i.bi-exclamation-circle,
+.form_box.error small {
+  color: rgb(255, 0, 0);
+  visibility: visible;
+  font-weight: 400;
+}
+
+.form_box small {
+  visibility: hidden;
+  font-size: .9em;
+}
+
+
+.contact_success {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 15vw auto auto auto;
+}
+
+.contact_success i {
+  font-size: 5rem;
+  font-size: clamp(5rem, 4.6rem + 2vw, 7rem);
+  color: rgb(160, 160, 160);
+  margin: auto auto 2rem auto;
+}
+
+.contact_success p {
+  font-size: 1rem;
+  font-size: clamp(1rem, 0.94rem + 0.30000000000000004vw, 1.3rem);
+  margin: .3rem auto;
+}
+
+.contact_success a {
+  font-size: 1.1rem;
+  font-family: system-ui, 'Segoe UI', Roboto, Cantarell,
+  'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: rgb(160, 160, 160);
+  margin: 5rem auto auto auto;
+  transition: all .5s;
+}
+
+.contact_success a:hover {
+  color: whitesmoke;
+  transform: scale(1.01);
+  transition: all .5s;
+}

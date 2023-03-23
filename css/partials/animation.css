@@ -1,0 +1,30 @@
+/*
+  author: 30secondsofcode
+  source: https://www.30secondsofcode.org/css/s/hover-underline-animation 
+  *Added some styling of my own as well*
+  */
+
+  .hover_a::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 3px;
+    bottom: 20%;
+    left: 0;
+    background-color: whitesmoke;
+    transform-origin: bottom right;
+    transition: transform 300ms ease-in-out;
+  }
+  
+  .hover_a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+  
+  .hover_a_active {
+    text-decoration: underline;
+    text-underline-offset: 24%;
+    text-decoration-thickness: 3px;
+  }
+  

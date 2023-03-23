@@ -1,0 +1,185 @@
+.ticket_body {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(11, 11, 11, 1) 5%,
+      rgba(255, 255, 255, 0) 40%
+    ),
+    linear-gradient(to top, rgba(9, 9, 9, 1) 5%, rgba(255, 255, 255, 0) 40%),
+    url(/media/ticket-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-attachment: scroll;
+  background-size: cover;
+  background-position: center;
+  padding: 2% 0;
+}
+
+.title_box,
+.event_row {
+  display: flex;
+  flex-direction: row;
+}
+
+.title_container {
+  background-color: rgba(48, 48, 48, 1);
+  width: 61.4vw;
+  margin: 3.5% 0 0 0;
+}
+
+.logo_container {
+  background-color: rgba(0, 0, 0, 1);
+  margin: 3.5% 0 0 auto;
+  width: 38.6vw;
+  display: flex;
+}
+
+.logo_ticket {
+  width: 15vw;
+  height: auto;
+  margin: auto;
+  justify-content: center;
+}
+.title_container h1 {
+  font-family: carrinady;
+  font-size: 1.75rem;
+  font-size: clamp(1.75rem, 0.7500000000000001rem + 4.5vw, 6.25rem);
+  margin: 0;
+  padding: 1% 0;
+  text-align: center;
+}
+
+.event_ticket_box {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.event_box {
+  margin-top: 2%;
+  width: 59.7vw;
+}
+
+.ticket_box {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(43, 43, 43, 1);
+  width: 40.3vw;
+  margin: 0 0 15vw 4%;
+  border-radius: 0 0 0 4px;
+}
+
+.ticket_box h2 {
+  font-size: 1.25rem;
+  font-size: clamp(1.25rem, 1.125rem + 0.625vw, 1.875rem);
+}
+
+.ticket_box input,
+.ticket_box label,
+.ticket_box p {
+  font-size: 1rem;
+  font-size: clamp(1rem, 0.95rem + 0.25vw, 1.25rem);
+}
+
+.event_container {
+  display: flex;
+  flex-direction: column;
+}
+
+.event_row {
+  gap: 2.5%;
+
+  margin: 0 0 2.5% 2.5%;
+}
+
+.event_img {
+  display: block;
+  width: 28.5vw;
+  height: auto;
+  border-radius: 3px;
+  border: solid black 1px;
+}
+
+.event_p_box {
+  margin: 11% auto 0 5%;
+  width: 19%;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.82);
+  text-align: center;
+  justify-content: center;
+  padding: 1.4% 0;
+}
+
+.event_p {
+  font-size: 1.125rem;
+  font-size: clamp(1.125rem, 1.0375rem + 0.33750000000000006vw, 1.5625rem);
+  margin: 0;
+}
+
+.event_p_small {
+  font-size: 1.125rem;
+  font-size: clamp(0.625rem, 1.0375rem + 0.1750000000000006vw, 1.4625rem);
+  padding: 0 1%;
+}
+
+.ticket_container {
+  border: solid black 1px;
+  margin: 7% 10%;
+  border-radius: 2px;
+}
+
+.ticket_row {
+  display: flex;
+  flex-direction: row;
+  gap: 2%;
+  margin: 4% 2% 0 2%;
+}
+
+.row_bottom {
+  margin: 4% 2% 7% 2%;
+}
+
+.ticket_container h2 {
+  margin: 3% 0 7% 2%;
+}
+
+.ticket_info {
+  margin: 0 0 3% 4%;
+}
+
+.ticket_info_bottom {
+  margin: 0 0 4% 4%;
+}
+
+.ticket_sum {
+  margin: 2% 0 7% 10%;
+  font-size: 1.25rem;
+font-size: clamp(1.25rem, 1.1875rem + 0.3125vw, 1.5625rem);
+}
+
+.ticket_button {
+  font-size: 1.25rem;
+  font-size: clamp(1.25rem, 1.1875rem + 0.3125vw, 1.5625rem);
+  justify-content: center;
+  margin: 0 auto 4% auto;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0);
+  border-radius: 2px;
+  border: solid black 1px;
+  padding: 1.5% 6%;
+  transition: 240ms ease-in-out;
+}
+
+.ticket_button:hover,
+.ticket_button:focus,
+.ticket_button:active {
+  transform: scale(1.1);
+  background-color: black;
+  color: whitesmoke;
+}
+
+/* simple color styling for radio and checkbox - by me */
+
+input[type="radio"],
+input[type="checkbox"] {
+  accent-color: rgb(0, 0, 0);
+}
