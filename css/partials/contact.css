@@ -175,10 +175,12 @@ select:-webkit-autofill:focus {
   top: 15px;
 }
 
-.form_box.success input,
-.form_box.success textarea {
-  border: none;
+.form_box.success input {
   border-bottom: solid 1px rgb(12, 170, 60);
+}
+
+.form_box.success textarea {
+  border: solid 1px rgb(12, 170, 60)
 }
 
 .form_box.error input {
