@@ -1,4 +1,3 @@
-
 @media screen and (max-width: 1550px) {
   .about_box {
     background-position: center;
@@ -215,7 +214,6 @@
     margin: 0 0 5rem 0;
   }
 
-  
   .contact_form,
   .contact_row {
     width: 100vw;
@@ -226,9 +224,9 @@
     width: 100vw;
   }
 
-.form {
-  width: 95%;
-}
+  .form {
+    width: 95%;
+  }
 
   /* collection */
 
@@ -742,7 +740,7 @@
 
   .form_box ::placeholder {
     font-size: 1rem;
-font-size: clamp(1rem, 0.85rem + 0.25vw, 1.25rem);
+    font-size: clamp(1rem, 0.85rem + 0.25vw, 1.25rem);
   }
 
   /* about */
