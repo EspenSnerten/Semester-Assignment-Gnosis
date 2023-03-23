@@ -179,7 +179,7 @@ select:-webkit-autofill:focus {
 }
 
 .form_box.success textarea {
-  border: solid 1px rgb(12, 170, 60)
+  border: solid 1px rgb(12, 170, 60);
 }
 
 .form_box.error input {
