@@ -405,6 +405,14 @@
   .collection_container_title {
     line-height: 50%;
   }
+
+  /* research */
+
+  .blog_content p {
+    width: 80vw;
+    padding: 0;
+  }
+
 }
 
 @media screen and (max-width: 850px) {
@@ -739,8 +747,7 @@
   }
 
   .form_box ::placeholder {
-    font-size: 1rem;
-    font-size: clamp(1rem, 0.85rem + 0.25vw, 1.25rem);
+    font-size: 14px;
   }
 
   /* about */

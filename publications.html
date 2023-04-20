@@ -5,10 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="Espen Henriksen Snerten" />
-    <meta name="description" content="this is the gnosis homepage" />
-    <meta name="keywords" content="Science, booking, souvernir" />
-    <title>Gnosis</title>
+    <meta
+      name="description"
+      content="this is the gnosis research publications page"
+    />
+    <title>Research publications - Gnosis</title>
     <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="stylesheet" href="/css/partials/mediaqueries.css" />
+    <script defer src="/src/js/detail.js"></script>
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.1/font/bootstrap-icons.css"
@@ -55,7 +59,7 @@
         </div>
 
         <div class="link_box">
-          <a href="shop.html" class="hover_a">Shop</a>
+          <a href="shop.html" class="hover_a_active">Shop</a>
           <a href="tickets.html" class="hover_a">Tickets</a>
           <a href="collection.html" class="hover_a">Collection</a>
           <a href="about.html" class="hover_a">About</a>
@@ -103,65 +107,7 @@
     </header>
 
     <main>
-      <section class="hero">
-        <div class="hero_box">
-          <a href="tickets.html" class="hover_a">Visit us Today</a>
-        </div>
-      </section>
-
-      <section class="item_section">
-        <div class="item_box">
-          <div class="item item_top item_one">
-            <img src="/media/img1.png" alt="woman touching a touchscreen" />
-            <div class="label">
-              <div class="label_box_top">
-                <a href="collection.html">Find out whats new in science</a>
-              </div>
-            </div>
-          </div>
-          <div class="item item_top item_two">
-            <img src="/media/img2.png" alt="man with a vr headset" />
-            <div class="label">
-              <div class="label_box_top">
-                <a href="collection.html">Explore our new virtual world</a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="item_box_middle">
-          <div class="item item_middle">
-            <img src="/media/img3.png" alt="image of a robot" />
-            <div class="label">
-              <div class="label_box_middle">
-                <a href="collection.html">See the latest in robotics</a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="item_box bottom">
-          <div class="item item_top item_one">
-            <img src="/media/img4.png" alt="a hand touching a plasma ball" />
-            <div class="label">
-              <div class="label_box_bottom">
-                <a href="collection.html"
-                  >Tour the newly opened interactive section</a
-                >
-              </div>
-            </div>
-          </div>
-          <div class="item item_top">
-            <img src="/media/img5.png" alt="a bust of Archimedes" />
-            <p>Scientist quote of the day</p>
-            <p class="quote">
-              “Give me but a firm spot on which to stand, and I shall move the
-              earth.”
-            </p>
-            <p>-Archimedes</p>
-          </div>
-        </div>
-      </section>
+      <div id="blog-content" class="blog_content"></div>
     </main>
 
     <footer>

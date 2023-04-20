@@ -45,6 +45,7 @@
   text-align: center;
   height: auto;
   width: 12vw;
+  overflow: hidden;
 }
 
 .shop_img {
@@ -53,6 +54,17 @@
   height: auto;
   width: 12vw;
   border-radius: 3px 3px 0 0;
+  filter: brightness(98%);
+}
+
+
+
+.shop_content:hover img {
+  filter: brightness(105%);
+}
+
+.shop_content:hover {
+  transform: scale(1.008);
 }
 
 .shop_descrip_box {
