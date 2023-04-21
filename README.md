@@ -1,28 +1,27 @@
-## FED Interaction Design - Course Assignment
-Netlify: https://main--fascinating-biscotti-1af3f8.netlify.app/contact.html
+## CMS - Course Assignment
+Netlify: https://fascinating-biscotti-1af3f8.netlify.app/research.html
 
-## Rapport Interaction Design course assignment
+## Rapport CMS assignment
 
-This document will serve as my Interaction Design
-Rapport, throughout the document I will detail my design choices and the interview process, ass well as the choices I went with after assessing user feedback.
+This document will serve as my CMS Rapport, 
+throughout the document I will detail my coding choices and the wordpress process I went through in this project, 
+this rapport will be a short one as the work I did was fast and easy, though I did make a mistake or two along the way.
 
-I first started this weeks ago when I set up the site with hotjar,
-now the user feedback I got from hotjar was kind of redundant seeing as the site really don't serve any purpose and have any functionality, so my first step this week was to talk to friends and my partner and have them navigate the site with me telling them the overall finished idea of the site, the reason why they where my interview subjects instead of a classmate is simply because they do not stare at code throughout the day and have not built a similar site, I felt their feedback would be the most authentic when it comes to real world users.
+Mistake number one was my confusion around the cms, I fumbled a bit in where to make my content, but when I put the pieces together it was quite straight forward, I don't know if I am correct as I haven't tested that yet but another mistake I made I think was that I did not just make my content on flywheel from the get go, 
+so instead I made it in local and pushed it to flywheel, when in theory it looked to me that I just could have made the content in flywheel, you live you learn.
 
-important to note is that I did not guide them through the site, I only answered questions when they encountered a button that is going to have functionality in the future. 
+after I got flywheel up and running it was a pretty simple process of making an API call to my cms and displaying the content on my first semester project site,
+The content itself is just lorem ipsum. 
 
-What I quickly found out is that my contact form design is a little dated, and needed a redesign, I went with the same basic design I had in my js course assignment but kept with the overall aesthetics of my semester site, the end result looks fairly decent in my opinion, in the future I want to focus on implementing a few animation-touches to it.
+On this project I know i did the bare minimum as my mind is already firmly fixed on the upcoming semester exam, I did as the brief stated and have the following done:
 
-I also added validation and formsubmit functionality to it so that it is now a fully functioning form.
-
-After I did this I let the same group of people test it again, and the consensus among them was that it now looked a lot more professional and the error messages was easy to understand for them, they also liked that it gives positive feedback on input fields with successful validation.
-
-I did not focus on cart functionality on this project, but I will be working on it parallel to my own personal project in the future, it would be cool to create my own API for the e-commerce so that when I put this site in my portfolio the code will look a lot more appealing to the recruiters.
-
-I did update the look of the “add to cart” button after user feedback, the contrast is now a lot better and easier to see for the user.  
+- have installed WordPress on a web host and created a list of blogs
+- be making an API call to fetch the blogs to your cross-course project
+- be using query strings to let the user click to view an individual product.
 
 
-Overall I enjoyed this exercise, it is cool to sit with people and watch them navigate and use my work after I have improved upon it and get feedback in real-time, when the site finally gets cart functionality with checkout and the likes, then the data gathered from hotjar will be a lot more valuable.
+In case you get redirected to the homepage of the site I will state here that the cms course assignment delivery is the research publications link in the footer of my site, but I have also posted a direct link above the report.
+Overall a cool assignment, I have a lot of ideas that will absolutely need a cms, so this was quite helpful to my personal projects.
 
 ## References 
 
