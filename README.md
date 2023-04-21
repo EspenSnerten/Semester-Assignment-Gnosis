@@ -22,7 +22,3 @@ On this project I know i did the bare minimum as my mind is already firmly fixed
 
 In case you get redirected to the homepage of the site I will state here that the cms course assignment delivery is the research publications link in the footer of my site, but I have also posted a direct link above the report.
 Overall a cool assignment, I have a lot of ideas that will absolutely need a cms, so this was quite helpful to my personal projects.
-
-## References 
-
-Icons for the form: https://icons.getbootstrap.com/
