@@ -82,12 +82,6 @@ Thank you for considering contributing to this project! I appreciate your time a
 
 ## Contact
 
-If you have any questions or need further assistance, you can reach out to us via [email/address/link to communication channel] or [mention any other relevant contact information].
-
-We appreciate your contributions and look forward to collaborating with you!
-
-## Contact
-
 My mail account](espensnert@hotmail.com)
 
 
