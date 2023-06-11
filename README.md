@@ -2,6 +2,8 @@
 
 ![image](/media/gnosis.jpg)
 
+- live link [https://fascinating-biscotti-1af3f8.netlify.app/]
+
 This was my first year Christmas semester assignment, the task was to build a website for a science museum.
 
 in the brief we got it was stated that the project should appeal to all ages and families with kids.
