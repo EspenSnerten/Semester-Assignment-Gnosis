@@ -1,24 +1,96 @@
-## CMS - Course Assignment
-Netlify: https://fascinating-biscotti-1af3f8.netlify.app/research.html
+# Semester-Assignment-Gnosis
 
-## Rapport CMS assignment
+![image](/media/gnosis.jpg)
 
-This document will serve as my CMS Rapport, 
-throughout the document I will detail my coding choices and the wordpress process I went through in this project, 
-this rapport will be a short one as the work I did was fast and easy, though I did make a mistake or two along the way.
+This was my first year Christmas semester assignment, the task was to build a website for a science museum.
 
-Mistake number one was my confusion around the cms, I fumbled a bit in where to make my content, but when I put the pieces together it was quite straight forward, I don't know if I am correct as I haven't tested that yet but another mistake I made I think was that I did not just make my content on flywheel from the get go, 
-so instead I made it in local and pushed it to flywheel, when in theory it looked to me that I just could have made the content in flywheel, you live you learn.
+in the brief we got it was stated that the project should appeal to all ages and families with kids.
 
-after I got flywheel up and running it was a pretty simple process of making an API call to my cms and displaying the content on my first semester project site,
-The content itself is just lorem ipsum. 
+## Description
 
-On this project I know i did the bare minimum as my mind is already firmly fixed on the upcoming semester exam, I did as the brief stated and have the following done:
+The research phase I went through in this project was mainly finding inspiration for my design, I was not in need of approval for various vital parts of the project because I was the only one working on this, 
+that meant that the starting phase really did not include all that much  detailed planning, I set my goals and mainly followed a daily to-do list, I did construct a gantt chart, 
+but during the course of the assignment I ended up defaulting to my trusty to-do list witch I use in other parts of my daily life, 
+this was a mistake as my time management suffered because of this, a valuable lesson learned, 
+just because it work's in my daily life thus not constitute that it will work on a project. 
 
-- have installed WordPress on a web host and created a list of blogs
-- be making an API call to fetch the blogs to your cross-course project
-- be using query strings to let the user click to view an individual product.
+The design phase for me was a bit frustrating this time, certain parts I loved and my creative process was in a good flow, but when I hit that creative wall I felt really stuck, 
+so much so that I ended up taking a break from the project for a day, this is also a very valuable lesson, this for me highlights the one thing I do have control over when it comes to creativity and that is perseverance, 
+and i will absolutely work on this from now on.
+
+All but one of the images I used in the project was gathered from unsplash, I felt this was a good choice as it gave my media profile a certain structure both in looks and references wise, the fonts I used was sourced from 1001fonts.com.
+I did a cool thing where I designed a basic geometric shape and put a cool font with a word that has relevance to the project and that was how my name and profile for the page was born, 
+I have included an option I was considering for the name of the site as well as the logo in the figma file, I will further detail the profile of the site in my conclusion,
+Structurally the site follows perhaps a little too safe a pastern, and had I had more confidence in my coding ability's I would have included a lot more scenes to the site as time constraint's was something I was wary of,
+ it is not an excuse, I had after all a month for this project, but I really wanted the pages I did go for to be so much better than the last time.
+
+The stand out pages in my opinion is the “shop” page and the “home” page, these I felt came out real nice and the aesthetics made sense, one really cool thing I did with the “shop” page is that I used a website were you can print logo's on different objects and used that as my souvenirs, thus I was able to present a structured souvenir shop that looked professional.  
+
+The “contact” page and “about” page is really nothing special but they do look nice as well, the same unfortunately can not be said about the collection and ticket page, and these were of course the pages I had a lot of trouble designing and it reflects on the aesthetics of the page, of course now that I am at the end of my project I have several ideas that could be cool but alas no time to implement them, this is a hundred percent on me and my poor time management. 
+
+The coding process this time set in contrast to earlier projects went a lot smoother, I learned from my previous mistakes and improved upon what I did right last time, this resulted in a site that is responsive and works almost universally on different devices, I still have a way to go when it comes to the clamp function, but I am working on it.
+
+I used flex where I felt it appropriate and even included grids, which for me was a function I struggled with on the last assignment and ended up not using that time, 
+so for me that I was able to not only use grids where it made sense but also clamp on the text is a major improvement.
+
+Another thing I felt I did right is that I worked with percentages and viewport width, this was also a pretty major improvement and really made a difference when it came to responsiveness.
+What I did wrong however is that I once again coded the wrong way, I struggled to wrap my head around  beginning with mobile view when coding, huge room for improvement there, 
+I also have some work to do when it comes to structuring my css, but in my opinion it is a lot better than last time. 
+
+To conclude my rapport, I designed a site that caters to the modern young family, kids today grow up and consume minimalist design everywhere they go, therefore I opted for a minimalist almost retro futuristic look for the site, the introduction of colour mainly coming from the pictures I use, I like this design, and so do my peer group age wise, it reflects in everything young adults and their young families consume today, had I designed this site only ten years ago I would have included a lot more colours.
+
+To summarize this project, I will say that I set out with a very clear goal, and that was to improve on everything I did wrong the last time, nearly all of the code is written by me, I have borrowed a few lines, but not to the extent I did last time, this has resulted in perhaps too safe a site, but at least it works as intended, I know what I must work on and in the future I will be moving more out of my comfort zone. 
+
+## Built With
+
+- HTML
+- CSS
+- JS
+
+## Getting Started
+
+### Installing
+
+1. Clone the repo:
+
+```bash
+git clone https://github.com/EspenSnerten/Semester-Assignment-Gnosis
+```
+
+# Contributing to [Semester-Assignment-Gnosis]
+
+Thank you for considering contributing to this project! I appreciate your time and effort. This document outlines the guidelines for contributing to my project. Please take a moment to review it before getting started.
+
+## Getting Started
+
+1. Fork the repository and clone it to your local machine.
+2. Create a new branch for your contributions: `git checkout -b feature/your-feature-name`.
+3. Make your desired changes or additions.
+4. Test your changes thoroughly to ensure they work as intended.
+5. Commit your changes with a descriptive commit message: `git commit -m "Add feature: your feature name"`.
+6. Push your changes to your forked repository: `git push origin feature/your-feature-name`.
+7. Create a pull request (PR) from your forked repository to the main repository.
+
+## Guidelines
+
+- Ensure your code follows the existing code style and conventions.
+- Write clear, concise, and meaningful commit messages.
+- Include documentation for any new features or changes you make.
+- Be respectful and considerate of others when discussing or reviewing code.
+- Be responsive to any feedback or comments on your pull request.
+- Avoid submitting multiple unrelated changes in a single pull request. Please create separate PRs for each feature or bug fix.
+
+## Contact
+
+If you have any questions or need further assistance, you can reach out to us via [email/address/link to communication channel] or [mention any other relevant contact information].
+
+We appreciate your contributions and look forward to collaborating with you!
+
+## Contact
+
+My mail account](espensnert@hotmail.com)
 
 
-In case you get redirected to the homepage of the site I will state here that the cms course assignment delivery is the research publications link in the footer of my site, but I have also posted a direct link above the report.
-Overall a cool assignment, I have a lot of ideas that will absolutely need a cms, so this was quite helpful to my personal projects.
+## Acknowledgments
+
+The mobile menu was borrowed from this link: https://codepen.io/alvarotrigo/pen/MWEJEWG author: Álvaro
